@@ -1,18 +1,7 @@
-/*----------------------------------------------------------
-	Tema: "Site Responsivo HTML5 e CSS3"
-	Data: 11/2022
-	Versão: 3.1
-	Data Atualização: 11/2022
-	Author: Prof. Cleber Leão
-	Author URL: http://www.cleberleao.com
------------------------------------------------------------*/
 
-/*----------------------------------------------------------
-Configs Gerais 
-----------------------------------------------------------*/
 body{
-	background:url(../img/background.jpg); 
-	color:#868686; 
+	background:url(../camisas_e_logo/fundopreto.jpg); 
+	color:#800080; 
 	font-family: "Open Sans", Helvetica, sans-serif, arial; 
 	font-size: 18px; /* 18px a· 16px = 1.125em */
 	font-weight: 300;
@@ -43,8 +32,8 @@ img, picture, video, embed {
     max-width: 100%; /*define a largura maxima em ate 100%*/
 }
 h1, h2{
-	color:#0ac3fe; 
-	font-size: 3.3333333333em; /* 60px a· 18px = 3.3333333333em */
+	color:#800080; 
+	font-size: 2.7777777777em; /* 60px a· 18px = 3.3333333333em */
 	font-weight: 800;
 	letter-spacing: -0.05em; /* -3px a· 60px = -0.05em */
 	line-height: 1em; /* 60px a 60px = 1em */
@@ -83,12 +72,13 @@ logotipo
 =========================
 */
 	header h1 a{
-		background:url(../img/logo-criar-site-responsivo.png) no-repeat ; 
+		background:url(../camisas_e_logo/logo.png) no-repeat ; 
 		display:block; 
 		float:left; 
-		height:139px;
-		text-indent:-9999; 
-		width:38.333333333333%; /* 700px a 1200px = 0.58333333333333 x 100 = 58.333333333333%*/
+		height:500px;
+		text-indent:-9999;
+		padding: 0%;
+		width:30%; /* 700px a 1200px = 0.58333333333333 x 100 = 58.333333333333%*/
 	}
 /*
 =========================
@@ -141,7 +131,7 @@ nav{
 	}
 
 .meio{
-	background-color:#0ac3fe;
+	background-color:#000000;
 	height: 437px;
 	padding: 2.5%;
 	width: 95%;
@@ -158,14 +148,14 @@ nav{
 	margin-right: 2.631578947368421%;
 }
 .desktop{
-	background-color:#fe9481;
+	background-color:#ffffff;
 }
 .tablet{
-	background-color:#fcda92;
+	background-color:#ffffff;
 }
 
 .mobile{
-	background-color:#9c8cb9;
+	background-color:#ffffff;
 	margin-right:0px;
 }
 .meio .desktop figure, .meio .tablet figure, .meio .mobile figure{
@@ -195,13 +185,13 @@ span.botao a{
 	padding: 2px 3.333333333333333%;
 }
 .desktop span.botao a{
-	background-color: #fe9481;
+	background-color: #000000;
 }
 .tablet span.botao a{
-	background-color: #fcda92;
+	background-color: #b8860b;
 }
 .mobile span.botao a{
-	background-color: #9c8cb9;
+	background-color: #008000;
 }
 span.botao{
 	font-size: 1.11111111111em;
@@ -232,11 +222,11 @@ footer{
 	width:100%;
 }
 
-@media scream and (max-width: 999px) {
+@media screean and (max-width: 999px) {
 	h2, a, a:link, a:visited{
 		color: #228b22
 	}
-	a:hover{
+	a:hover {
 		color: #f9ad0f;
 	}
 	header {
@@ -249,42 +239,42 @@ footer{
 		margin-bottom: 15px;
 		width: 100%;
 	}
-	nav{
+	nav {
 		float: none;
 		text-align: center;
 		width: 100%;
 	}
-	nav a.ativo:link, nav a:hover{
+	nav a.ativo:link, nav a:hover {
 		color: #228b22
 	}
-	.chamada{
+	.chamada {
 		height: 200px;
 	}
 	h2{
 		font-size: 2.2222222222em;
 	}
-	.chamda h3{
+	.chamda h3 {
 		font-size: 1.1111111111em;
 	}
-	.meio{
+	.meio {
 		background-color: #228b22;
 		height: 400px;
 		width: 92.1875%;
 	}
-	.desktop, .tablet, .mobile{
+	.desktop, .tablet, .mobile {
 		width: 31.25%;
 		height: 350px;
 	}
-	.meio .desktop figure, .meio .tablet figure, .meio .mobile figure{
+	.meio .desktop figure, .meio .tablet figure, .meio .mobile figure {
 		width: 62.25%;
 	}
-	.meio img{
+	.meio img {
 		height: 80px;
 	}
-	.meio h3{
+	.meio h3 {
 		font-size: 1.6666666667em;
 	}
-	.meio p{
+	.meio p {
 		font-size: 0.7777777778em;
 		height: 160px;
 		line-height: 1,1428571428em;
@@ -298,7 +288,111 @@ footer{
 		position: absolute;
 		width: 50%
 	}
-	span.botao a{
+	span.botao a {
 		padding: 2px 3.3333333333333333%;
 	}
+}
+
+@media screean and (max-width: 630px) {
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.centro {
+		width: 100%;
+	}
+	h2, a, a:link, a:visited{
+		color: #ff4500;
+	}
+	a:hover {
+		color:2fd02bc;
+	}
+	header {
+		border-bottom: none;
+		height: auto;
+		text-align: center;
+	}
+	header h1 a {
+		background-position: 50%;
+		display: inherit;
+		height: 126px;
+		width: 100%;
+	}
+	nav {
+		clear: both;
+	}
+	nav li {
+		background-color: 9c8cb9;
+		display: block;
+	}
+	nav li a {
+		height: 40px;
+		margin: 0;
+		padding-top: 3px;
+		text-align: center;
+		text-shadow: none;
+		width: 100%;
+	}
+	nav li a:link {
+		colo:#ffffff;
+		font-size: 1.388em;
+	}
+	nav li a.ativo:link, nav li a:hover, nav li a:visited {
+		background-color: #745f9a;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	nav li a.ativo:hover, nav li a.ativo:visited {
+		background-color: #9c8cb9;
+	}
+	.chamada {
+		height: 145px;
+		margin-top: 10px;
+	}
+	h2 {
+		font-size: 1.444em;
+		letter-spacing: -0.0769em;
+		margin-bottom: 15px;
+	}
+	.chamda h3 {
+		font-size: 0.778em;
+	}
+	.meio {
+		background-color:  #8a2be2;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.meio .desktop, .meio .tablet, .meio .mobile {
+		float: none;
+		height: 160px;
+		width: 100%
+	}
+	.meio .desktop figure, .meio .tablet figure, .meio .mobile figure {
+		float: left;
+		height: 160px;
+		margin: 0; 
+		padding: 0;
+		width: 53.125%;
+	}
+	.meio h3 {
+		float: left;
+		margin-top: 40px;
+		width: 46.875%;
+	}
+	.meio .desktop figure img, .meio .tablet figure img, .meio .mobile figure img {
+		height: 125px;
+		margin-top: 15px;
+		width: 86.274%;
+	}
+	.meio p {
+		display: none;
+	}
+	.copyleft, .desenvolvedor {
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	
 }
