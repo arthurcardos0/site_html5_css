@@ -1,11 +1,23 @@
-.css, .bootstrap, .react{
-    float: left;
-    height: 350px;
-    position: relative;
-    text-align: justify;
-    width: 31%;
+/*header nav ul li{
+    list-style:none;
+    display: inline;
+    margin-right: 15px;
+    text-transform: uppercase;
 }
 
-.css, .bootstrap, .react{
-    margin: 2%;
+.w33{
+    width: 33%;
 }
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+} */
+
